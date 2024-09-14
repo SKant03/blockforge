@@ -1,0 +1,58 @@
+.In_body{
+    margin: 4rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+}
+.In_content{
+    width: 35rem;
+}
+.In_table{
+    border: 1px;
+    border-radius: 15%;
+    background-color: white;
+    overflow: hidden ;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+.svg{
+    height: 50px;
+    width: 50px;
+}
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    gap: 2rem;
+}
+.d_body{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    text-align: justify;
+    background-color: white;
+}
+.d_image{
+    margin: 2rem;
+    width: 500px;
+}
+.d_discription{
+    width: 700px;
+}
+.d_img{
+    width: 500px;
+    height: 500px;
+
+}
+.h3{
+    text-align: center;
+}

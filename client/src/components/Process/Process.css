@@ -1,0 +1,36 @@
+.p-body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 2rem;
+    height: 40rem;
+    background-color: white;
+}
+.p-des{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 2rem;
+
+}
+.p-heading{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:xx-large;
+
+}
+.elements{
+    height: 80px;
+    width: 80px;
+}
+.des_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px ;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}

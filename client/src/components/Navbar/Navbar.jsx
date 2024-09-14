@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navbar.css";
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const MyNavbar = () => {
     return (
         <div>
             <header>
@@ -26,4 +26,4 @@ const Navbar = () => {
         </div>
     )
 }
-export default Navbar
+export default MyNavbar
