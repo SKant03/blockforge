@@ -15,7 +15,7 @@ contract Subsidy {
 
     constructor() payable {
         subsidy_provider= msg.sender;
-        //allocated_subsidy = msg.value;
+        allocated_subsidy = msg.value;
         start = false;
     }
 
@@ -34,9 +34,9 @@ contract Subsidy {
         require(subsidy_activator_list[msg.sender] == true);
         _;
     }
-    function createsubsidy(uint val){
-        allocated_subsidy = val
-        
+    function createsubsidy(uint val) public {
+        allocated_subsidy = val;
+
     }
     function addsubsidyactivator (address _address) public onlysubsidy_provider{
         subsidy_activator_list[_address] = true;
