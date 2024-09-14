@@ -5,7 +5,9 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Card = () => {
+const Card = ({state}) => {
+
+  
   return (
     <div className="card_main">
       <div className="grid_container">

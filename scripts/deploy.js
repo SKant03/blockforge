@@ -4,14 +4,10 @@ const hre = require("hardhat")
 
 async function main() {
     // We get the contract to deploy
-    const Subsidy = await ethers.getContractFactory("Subsidy");
+    const Subsidy = await ethers.getContractFactory("Smallsubsudy");
 
     // Deploy the contract and send 1 Ether to the contract during deployment
-    const subsidy = await Subsidy.deploy(
-         {
-         value: ethers.parseEther("10") // Sends 1 Ether during deployment
-     }
-);
+    const subsidy = await Subsidy.deploy();
 
     console.log("Deployment transaction sent");
 

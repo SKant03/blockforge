@@ -6,7 +6,7 @@ import MyNavbar from './components/Navbar/Navbar';
 import Subsidy from './components/Subsidy/Subsidy';
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import abi from './ContractJson/Subsidy.json'
+import abi from './ContractJson/Smallsubsudy.json'
 
 function App() {
 
@@ -57,7 +57,7 @@ const connectMM = async () => {
     <div>
     <MyNavbar connectMM={connectMM}/>
     <Routes>
-      <Route path='/' element= {<Homepage/>}/>
+      <Route path='/' element= {<Homepage state={state}/>}/>
       <Route path='Login' element= {<Login/>}/>
       <Route path='Subsidy' element = {<Subsidy/>}/>
     </Routes>

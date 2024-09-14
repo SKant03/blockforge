@@ -6,13 +6,13 @@ import Process from '../../components/Process/Process'
 import Bank from '../../components/Bank/Bank'
 import Ques from '../../components/Ques/Ques'
 
-const Homepage = () => {
+const Homepage = ({state}) => {
 
 
   return (
     <div>
         <Banner/>
-        <Card/>
+        <Card state={state}/>
         <Process/>
         <Initiative/>
         <Bank/>
