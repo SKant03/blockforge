@@ -19,10 +19,6 @@ const Navbar = () => {
                             <li className='nav-item'>
                                 <a className='nav-link' href="#"><Button>Register</Button></a>
                             </li>
-                            <li className='nav-item'>
-                                <a className='nav-link' href="#">< Button >About Us</ Button >
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -30,5 +26,4 @@ const Navbar = () => {
         </div>
     )
 }
-
 export default Navbar
