@@ -7,6 +7,8 @@ import Bank from '../../components/Bank/Bank'
 import Ques from '../../components/Ques/Ques'
 
 const Homepage = () => {
+
+
   return (
     <div>
         <Banner/>
