@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navbar.css";
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import abi from "./contractJson/Subsidy.json"
 
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
@@ -17,8 +18,8 @@ const MyNavbar = () => {
     const [connect, setConnect] = useState('connect')
 
     const connectMM = async () => {
-        const contractAddress="";
-        const contractAbI="";
+        const contractAddress="0x5FbDB2315678afecb367f032d93F642f64180aa3";
+        const contractAbI=abi.abi;
         try {
             const { ethereum } = window;
             const account = await ethereum.request({
