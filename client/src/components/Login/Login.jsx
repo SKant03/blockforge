@@ -17,14 +17,13 @@ const Login = () => {
                         <input className='form_control' type="text" placeholder='username' />
                         <label htmlFor="text">password :</label>
                         <input className='form_control' type="text" placeholder='username' />
-                        <Link to='/homepage' className='btn1'><Button className='button'>login</Button></Link>
-
+                        <Link to='/' className='btn1'><Button className='button'>login</Button></Link>
                     </div>
                 </div>
             </div>
 
         </div>
     )
+    
 }
-
 export default Login
