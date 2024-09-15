@@ -4,10 +4,10 @@ import svg from "../../assets/select.svg"
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from "react";
 
 const Card = ({state}) => {
-
-  
+  const {contract} = state
   return (
     <div className="card_main">
       <div className="grid_container">
@@ -23,7 +23,7 @@ const Card = ({state}) => {
             • Use your electronic- Negotiable Warehouse Receipts (e-NWR) to apply for secured credit from banks. <br />
             e-NWRs can be issued only by WDRA registered warehouses. <br />
             • Financing for agricultural commodities against e-NWRs available from Banks / Financial Institutions.</p>
-          <Link to='/Subsidy'><Button className="btn btn-primary ">open subsidy</Button></Link>
+          <Link to='/Subsidy' contract={contract}><Button  className="btn btn-primary ">open subsidy</Button></Link>
         </div>
         <div className="card_body text-justify">
           <h5>Agri Loan - Kisan Credit Card</h5><hr/>
